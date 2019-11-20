@@ -1,8 +1,5 @@
-// shit.. I don't like code like this..
-// and it is not working.
-
 function search(arr: number[], left: number, right: number, x: number): number {
-  const mid = ~~(left + right / 2)
+  const mid = ~~((left + right) / 2)
 
   if (x === arr[mid]) return mid
 
@@ -26,3 +23,5 @@ function search(arr: number[], left: number, right: number, x: number): number {
 }
 
 console.log(search([15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14], 0, 11, 5) === 8)
+
+export {}
