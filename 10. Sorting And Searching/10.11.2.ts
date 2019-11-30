@@ -13,9 +13,9 @@ function findBiggestIndex(
   b: number,
   c: number
 ): number {
-  const aVal = arr[a] || Number.MIN_VALUE
-  const bVal = arr[b] || Number.MIN_VALUE
-  const cVal = arr[c] || Number.MIN_VALUE
+  const aVal = arr[a] !== undefined ? arr[a] : Number.MIN_VALUE
+  const bVal = arr[b] !== undefined ? arr[b] : Number.MIN_VALUE
+  const cVal = arr[c] !== undefined ? arr[c] : Number.MIN_VALUE
 
   const max = Math.max(aVal, bVal, cVal)
   switch (max) {
