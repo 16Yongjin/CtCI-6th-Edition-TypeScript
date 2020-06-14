@@ -3,6 +3,6 @@
     "module": "commonjs",
     "target": "esnext",
     "moduleResolution": "node",
-    "lib": ["es2019", "esnext.array"]
+    "lib": ["es2019", "esnext.array", "DOM"]
   }
 }
